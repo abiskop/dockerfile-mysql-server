@@ -13,4 +13,4 @@ RUN apt-get install -y mysql-server
 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ENTRYPOINT "/usr/sbin/mysqld"
+ENTRYPOINT ["/usr/sbin/mysqld"]
